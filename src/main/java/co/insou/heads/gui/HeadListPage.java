@@ -32,7 +32,7 @@ public class HeadListPage extends GUIPage<Heads> {
     @Override
     public void onInventoryClick(InventoryClickEvent event) {
         player.closeGUI(true);
-        player.player().getLocation().getWorld().dropItemNaturally(player.player().getEyeLocation(), event.getInventory().getItem(event.getSlot()));
+        player.player().getLocation().getWorld().dropItem(player.player().getEyeLocation(), event.getInventory().getItem(event.getSlot()));
         player.player().sendMessage(ColorChar.color(String.format("&aYou were given skull \"%s\"", ColorChar.strip(event.getInventory().getItem(event.getSlot()).getItemMeta().getDisplayName()))));
     }
 
