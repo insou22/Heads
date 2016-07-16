@@ -1,0 +1,7 @@
+name: Heads
+version: 1.0-SNAPSHOT
+main: co.insou.heads.Heads
+
+commands:
+  heads:
+    description: 'Opens the heads gui!'
