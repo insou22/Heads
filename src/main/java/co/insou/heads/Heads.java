@@ -22,6 +22,4 @@ public class Heads extends JavaPlugin {
         return guiManager;
     }
 
-    public String getFoo() { return "foo"; }
-
 }
